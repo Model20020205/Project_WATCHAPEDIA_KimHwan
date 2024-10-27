@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>상세 페이지</title>
+	<link rel="stylesheet" href="WatchaPedia_Detail_Page.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<!-- jQuery 시작 -->
+	<script>
+		$(function(){
+			$(".button_text").click(function(){	// 평가 작성란
+				$(".ins_main_screen").css("display", "flex");
+				$(".main_screen").css("display", "block");
+			});
+			$(".insert_out").click(function(){	// 평가 작성란
+				$(".ins_main_screen").css("display", "none");
+				$(".main_screen").css("display", "flex");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="main_screen">
+		
+		<!-- 작성란 창 생성 -->
+		
+		<div class="ins_main_screen">
+			<div class="insert_comment">
+				<header class="insert_header_box">
+					<div class="insert_title_box">데드풀과 울버린</div>
+					<button class="insert_out">
+						<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+					</button>
+				</header>
+				<div class="insert_content_box">
+					<textarea class="insert_box"  placeholder="이 작품에 대한 생각을 자유롭게 표현해주세요."></textarea>
+					<div class="down_box">
+						<div class="korean_count">0/10000</div>
+						<button class="save_button">저장</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 작성란 창 생성 여기까지 -->
+		
+		<div class="main_header">
+			<header id= "head">
+				<nav>
+					<section class= "headmargin">
+						<ul class= "headul">
+							<li class= "mainlogo">
+								<img src= "img/watcha.png"/>
+							</li>
+							<li class= "headsearchsetting"> 
+								<input type="text" placeholder="영화, 인물, 유저를 검색해보세요">
+							</li>
+							<li class= "headsetting">
+								<button class="login-button">&nbsp;&nbsp;로그인</button>
+							</li>
+							<li class= "headsetting">
+								<button class= "signup-button">회원가입</button>
+							</li>
+						</ul>
+					</section>
+				</nav>
+			</header>
+		</div>
+		<div class="main_content">
+			<div class="main_photo">
+				<img class="photo_size" src="https://an2-img.amz.wtchn.net/image/v2/ycvEzNWeFS30ixKSI-KmMg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1Ua3lNSGd4TURnd2NUZ3dJbDBzSW5BaU9pSXZkakl2YzNSdmNtVXZhVzFoWjJVdk5qQTRPRGd5TVRRM05USXlOalkyTkNKOS5CVldvZ1BqUnU0VkpzQTR4LWFOOWxlcmpVY0ZEVFBybFltZ1M0Vm5DMDVR">
+				<div class="header_box">
+					<div class="header"></div>
+					<div class="header2">
+						<div class="desc_box">
+							<div class="movie_info">
+								<h1 class="movie_title">데드풀과 울버린</h1>
+								<div class="movie_eng_title">Deadpool & Wolverine</div>
+								<div class="movie_genre">2024 액션/코미디/SF 미국</div>
+								<div class="movie_time">2시간 7분 청불</div>
+								<div class="movie_rank">예매 순위 2위(13%) 개봉 8일째 누적 관객 125.8만명</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="detail_box">
+				<div class="detail_info_box">
+					<div class="detail_poster_box">
+						<img class="detail_poster" src="https://an2-img.amz.wtchn.net/image/v2/zB2rVsW-7RjHsXNTZCVIuQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk5Ea3dlRGN3TUhFNE1DSmRMQ0p3SWpvaUwzWXlMM04wYjNKbEwybHRZV2RsTHprNU16WXdOalkzTlRVeU1qZzFOVFVpZlEuYVEzRUFWcnhqbWUtckhheGEzQzBTSmFxaTAwSmJtVW5mV2RQNWtVNFFITQ">
+					</div>
+					<div class="detail_info">
+						<div class="detail_evaluation">
+							<div class="detail_star">
+								<div class="detail_star_select">
+									<div class="star_img">
+										&bigstar;
+									</div>
+									<div class="star_img">
+										&bigstar;
+									</div>
+									<div class="star_img">
+										&bigstar;
+									</div>
+									<div class="star_img">
+										&bigstar;
+									</div>
+									<div class="star_img">
+										&bigstar;
+									</div>
+								</div>
+								<div class="detail_star_text">평가하기</div>
+							</div>
+							<div class="detail_score_box">
+								<div class="detail_score_number_box">
+									<div class="detail_score_number">3.4</div>
+									<div class="detail_score_number_text">평균 별점(1.8만명)</div>
+								</div>
+							</div>
+							<div class="detail_comment_box">
+								<div class="button_text">
+									<svg aria-hidden="true" viewBox="0 0 24 24">
+								    	<path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04a1.004 1.004 0 0 0 0-1.41L18.37 3.29c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"></path>
+								    </svg>
+								    <div class="text">코멘트</div>
+								</div>
+							</div>
+						</div>
+						<div class="detail_post">
+							히어로 생활에서 은퇴한 후, 평범한 중고차 딜러로 살아가던 '데드풀'이 예상치 못한 거대한 위기를 맞아 모든 면에서 상극인 '울버린'을 찾아가게 되며 펼쳐지는 도파민 폭발 액션 블록버스터
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main_content2">
+			
+			<!-- 출연/제작 시작 -->
+			<div class="appear">
+				<div class="apper_title">
+					출연/제작
+				</div>
+				<div class="appear_info_box">
+					<div class="appear_info">
+						<!-- 출연/제작 반복 -->
+						<div class="actor_box">
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="actor_box">
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="actor_box">
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="actor_box">
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+							<div class="actor_info_box">
+								<div class="actor_name_box">
+									<div class="actor_img">
+										<img class="actor_photo" src="https://an2-img.amz.wtchn.net/image/v2/Hc_vFrkVy1zjFKZFsgXFvQ.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qUXdlREkwTUNKZExDSndJam9pTDNZeEwzQmxiM0JzWlM5dFpXUnBkVzB2TnpZNE5qUXlaVEF4TXpsaFpqQmhNMkl4WXpZdWFuQm5JbjAuVUE2LWJyOGRnY2ZoeE9wZkhWMHgyMTVuYnRSRDhmaWxjd3lNUWRzYkQ3VQ">
+									</div>
+									<div class="actor_desc">
+										<div class="actor_name_desc">숀 레비</div>
+										<div class="actor_role">감독</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 출연/제작 반복 여기까지 -->
+						
+						
+					</div>
+				</div>
+			</div>
+			<!-- 출연/제작 끝 -->
+			<!-- 코멘트 전체 화면 시작 -->
+			<div class="comment">
+				<div class="comment_text">
+					<div class="comment_font">코멘트</div>
+					<div class="require_font">3000+</div>
+					<div class="more_box">
+						<a class="real_more">더보기</a>
+					</div>
+				</div>
+				<div class="comment_list_box">
+				<!-- 코멘트 div 시작 -->
+					<li class="comment_list">
+						<div class="list_comment_box">
+							<div class="list_comment">
+								<div class="list_comment_img_box">
+									<img class="user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								김호진 펠릭스
+							</div>
+							<div class="star_cur">
+								<div class="star_cur_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									4.0
+								</div>
+							</div>
+						</div>
+						<div class="list_review_box">
+							내가 마블의 예수님이야! 그러니까 줄여서 MJ 다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아 - 보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다 헬로 디즈니가 아니라 ...
+						</div>
+						<div class="like_count">
+							<div class="count_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								277
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								3							
+							</div>
+						</div>
+						<div class="like_post">
+							<button class="like_button">좋아요</button>
+						</div>
+					</li>
+				<!-- 코멘트 div 끝 -->
+				<!-- 코멘트 div 시작 -->
+					<li class="comment_list">
+						<div class="list_comment_box">
+							<div class="list_comment">
+								<div class="list_comment_img_box">
+									<img class="user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								김호진 펠릭스
+							</div>
+							<div class="star_cur">
+								<div class="star_cur_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									4.0
+								</div>
+							</div>
+						</div>
+						<div class="list_review_box">
+							내가 마블의 예수님이야! 그러니까 줄여서 MJ 다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아 - 보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다 헬로 디즈니가 아니라 ...
+						</div>
+						<div class="like_count">
+							<div class="count_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								277
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								3							
+							</div>
+						</div>
+						<div class="like_post">
+							<button class="like_button">좋아요</button>
+						</div>
+					</li>
+				<!-- 코멘트 div 끝 -->
+				<!-- 코멘트 div 시작 -->
+					<li class="comment_list">
+						<div class="list_comment_box">
+							<div class="list_comment">
+								<div class="list_comment_img_box">
+									<img class="user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								김호진 펠릭스
+							</div>
+							<div class="star_cur">
+								<div class="star_cur_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									4.0
+								</div>
+							</div>
+						</div>
+						<div class="list_review_box">
+							내가 마블의 예수님이야! 그러니까 줄여서 MJ 다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아 - 보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다 헬로 디즈니가 아니라 ...
+						</div>
+						<div class="like_count">
+							<div class="count_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								277
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								3							
+							</div>
+						</div>
+						<div class="like_post">
+							<button class="like_button">좋아요</button>
+						</div>
+					</li>
+				<!-- 코멘트 div 끝 -->
+				<!-- 코멘트 div 시작 -->
+					<li class="comment_list">
+						<div class="list_comment_box">
+							<div class="list_comment">
+								<div class="list_comment_img_box">
+									<img class="user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								김호진 펠릭스
+							</div>
+							<div class="star_cur">
+								<div class="star_cur_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									4.0
+								</div>
+							</div>
+						</div>
+						<div class="list_review_box">
+							내가 마블의 예수님이야! 그러니까 줄여서 MJ 다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아 - 보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다 헬로 디즈니가 아니라 ...
+						</div>
+						<div class="like_count">
+							<div class="count_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								277
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								3							
+							</div>
+						</div>
+						<div class="like_post">
+							<button class="like_button">좋아요</button>
+						</div>
+					</li>
+				<!-- 코멘트 div 끝 -->
+				<!-- 코멘트 div 시작 -->
+					<li class="comment_list">
+						<div class="list_comment_box">
+							<div class="list_comment">
+								<div class="list_comment_img_box">
+									<img class="user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								김호진 펠릭스
+							</div>
+							<div class="star_cur">
+								<div class="star_cur_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									4.0
+								</div>
+							</div>
+						</div>
+						<div class="list_review_box">
+							내가 마블의 예수님이야! 그러니까 줄여서 MJ 다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아 - 보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다 헬로 디즈니가 아니라 ...
+						</div>
+						<div class="like_count">
+							<div class="count_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								277
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								3							
+							</div>
+						</div>
+						<div class="like_post">
+							<button class="like_button">좋아요</button>
+						</div>
+					</li>
+				<!-- 코멘트 div 끝 -->
+				<!-- 코멘트 div 시작 -->
+					<li class="comment_list">
+						<div class="list_comment_box">
+							<div class="list_comment">
+								<div class="list_comment_img_box">
+									<img class="user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								김호진 펠릭스
+							</div>
+							<div class="star_cur">
+								<div class="star_cur_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									4.0
+								</div>
+							</div>
+						</div>
+						<div class="list_review_box">
+							내가 마블의 예수님이야! 그러니까 줄여서 MJ 다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아 - 보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다 헬로 디즈니가 아니라 ...
+						</div>
+						<div class="like_count">
+							<div class="count_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								277
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								3							
+							</div>
+						</div>
+						<div class="like_post">
+							<button class="like_button">좋아요</button>
+						</div>
+					</li>
+				<!-- 코멘트 div 끝 -->
+				<!-- 코멘트 div 시작 -->
+					<li class="comment_list">
+						<div class="list_comment_box">
+							<div class="list_comment">
+								<div class="list_comment_img_box">
+									<img class="user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								김호진 펠릭스
+							</div>
+							<div class="star_cur">
+								<div class="star_cur_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									4.0
+								</div>
+							</div>
+						</div>
+						<div class="list_review_box">
+							내가 마블의 예수님이야! 그러니까 줄여서 MJ 다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아 - 보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다 헬로 디즈니가 아니라 ...
+						</div>
+						<div class="like_count">
+							<div class="count_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								277
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								3							
+							</div>
+						</div>
+						<div class="like_post">
+							<button class="like_button">좋아요</button>
+						</div>
+					</li>
+				<!-- 코멘트 div 끝 -->
+				<!-- 코멘트 div 시작 -->
+					<li class="comment_list">
+						<div class="list_comment_box">
+							<div class="list_comment">
+								<div class="list_comment_img_box">
+									<img class="user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								김호진 펠릭스
+							</div>
+							<div class="star_cur">
+								<div class="star_cur_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									4.0
+								</div>
+							</div>
+						</div>
+						<div class="list_review_box">
+							내가 마블의 예수님이야! 그러니까 줄여서 MJ 다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아 - 보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다 헬로 디즈니가 아니라 ...
+						</div>
+						<div class="like_count">
+							<div class="count_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								277
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								3							
+							</div>
+						</div>
+						<div class="like_post">
+							<button class="like_button">좋아요</button>
+						</div>
+					</li>
+				<!-- 코멘트 div 끝 -->
+				</div>
+			</div>
+			<!-- 코멘트 전체 화면 끝 -->
+			
+			<!-- 동영상 시작 -->
+			<div class="media">
+				<div class="media_title_header">
+					<div class="media_header">
+						동영상
+					</div>
+				</div>
+				<div class="media_img_box">
+					<!-- 동영상 이미지 div 시작 -->
+					<div class="media_img_list">
+						<div class="media_img">
+							<img class="media_img_size" src="https://img.youtube.com/vi/HhrZxznOArU/0.jpg">
+							<!-- 동영상 재생버튼 이미지 position: realtive랑 absolute로 들어가야 됨 -->
+						</div>
+						<div class="media_img_text">이게 바로 ❤️RED&YELLOW💛</div>
+					</div>
+					<!-- 동영상 이미지 div 끝 -->
+					
+					<!-- 동영상 이미지 div 시작 -->
+					<div class="media_img_list">
+						<div class="media_img">
+							<img class="media_img_size" src="https://img.youtube.com/vi/HhrZxznOArU/0.jpg">
+							<!-- 동영상 재생버튼 이미지 position: realtive랑 absolute로 들어가야 됨 -->
+						</div>
+						<div class="media_img_text">이게 바로 ❤️RED&YELLOW💛</div>
+					</div>
+					<!-- 동영상 이미지 div 끝 -->
+					
+					<!-- 동영상 이미지 div 시작 -->
+					<div class="media_img_list">
+						<div class="media_img">
+							<img class="media_img_size" src="https://img.youtube.com/vi/HhrZxznOArU/0.jpg">
+							<!-- 동영상 재생버튼 이미지 position: realtive랑 absolute로 들어가야 됨 -->
+						</div>
+						<div class="media_img_text">이게 바로 ❤️RED&YELLOW💛</div>
+					</div>
+					<!-- 동영상 이미지 div 끝 -->			
+				</div>
+			</div>
+		</div>
+		
+		<!-- footer -->
+		<div class="footer">
+			<div class="real_time_box">
+				<div class="real_time_text">
+					지금까지&nbsp;<span class="real_time_count">&#9733; 721,450,810 개의 평가가</span>&nbsp;쌓였어요.
+				</div>
+			</div>
+			<div class="preference">
+				<div class="preference_desc">
+					<div class="service">서비스 이용약관 | <span style="font-weight: bold;">개인정보 처리방침</span> | 회사 안내</div>
+					<div class="center">고객센터 | cs@watchapedia.co.kr, 02-515-9985</div>
+					<div class="cooperation">제휴 및 대외 협력 | https://watcha.team/contact</div>
+					<div class="address">주식회사 왓챠 | 대표 박태훈 | 서울특별시 서초구 강남대로 343 신덕빌딩 3층</div>
+					<div class="number">사업자 등록 번호 211-88-66013</div>
+					<div class="watcha">WATCHAPEDIA 2024 by WATCHA, Inc. All rights reserved.</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

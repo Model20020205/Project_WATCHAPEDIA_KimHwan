@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>왓챠피디아 메인 페이지</title>
+	<link rel= "stylesheet" href="WatchaPedia_Main.css"/>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<!-- jQuery 사용 -->
+	<script>
+		$(function(){
+			$(".headul .headsetting:nth-child(3)").click(function(){	// 로그인 창 생성
+				$(".login_main_screen").css("display", "flex");
+				$(".root").css("display", "block");
+			});
+			$(".login_main_screen").click(function(){	// 로그인 창 닫기
+				$(".login_main_screen").css("display", "none");
+			});
+			$(".headul .headsetting:nth-child(4)").click(function(){	// 회원가입 창 생성
+				$(".register_main_screen").css("display", "flex");
+				$(".root").css("display", "block");
+			});
+			$(".register_main_screen").click(function(){	// 회원가입 창 닫기
+				$(".register_main_screen").css("display", "none");
+				$(".root").css("display", "flex");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id= "root">
+		
+	<!-- 회원가입 여기서부터 시작 -->
+	<div class="register_main_screen">
+		<div class="login_box">
+			<div class="login_inner">
+				<div class="login_header">
+					<img class="register_img" src="img/watcha.png">
+				</div>
+				<div class="login_word">회원가입</div>
+				<div class="input_box">
+					<div class="input_inner">
+						<div class="input_inner_box">
+							<div class="input_ep">
+								<input class="input_text" type="text" placeholder="이름" />
+							</div>
+							<div class="input_ep">
+								<input class="input_text" type="text" placeholder="이메일" />
+							</div>
+							<div class="input_ep">
+								<input class="input_text" type="text" placeholder="비밀번호" />
+							</div>
+							<div class="login_button_box">
+								<button class="login_button">
+									회원가입
+								</button>
+							</div>
+						</div>
+						<div class="account_ask">
+							<div class="account_box">
+								이미 가입하셨나요?
+							</div>
+							<button class="register_ask">
+								로그인
+							</button>
+						</div>
+						<div class="hr_line_box">
+							<hr class="hr_line">
+							<div class="line_word">
+								OR
+							</div>
+							<hr class="hr_line">
+						</div>
+						<div class="social_login">
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialKakao.444bf93dafbd611eb4d1.svg?as-resource">
+							</div>
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialGoogle.a946248e0b9a978c9f77.svg?as-resource">
+							</div>
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialTwitter.cc596d57b16f837b9729.svg?as-resource">
+							</div>
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialApple.484c0da1e6a00a23e23f.svg?as-resource">
+							</div>
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialLine.7f8a1fd121c282009db6.svg?as-resource">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 회원가입 여기서부터 끝 -->
+	
+	<!-- 로그인 여기서부터 -->
+	<div class="login_main_screen">
+		<div class="login_box">
+			<div class="login_inner">
+				<div class="login_header">
+					<img src="img/watcha.png">
+				</div>
+				<div class="login_word">로그인</div>
+				<div class="input_box">
+					<div class="input_inner">
+						<div class="input_inner_box">
+							<div class="input_ep">
+								<input class="input_text" type="text" placeholder="이메일" />
+							</div>
+							<div class="input_ep">
+								<input class="input_text" type="text" placeholder="비밀번호" />
+							</div>
+							<div class="login_button_box">
+								<button class="login_button">
+									로그인
+								</button>
+							</div>
+						</div>
+						<div class="pw_ask">
+							비밀번호를 잊어버리셨나요?
+						</div>
+						<div class="account_ask">
+							<div class="account_box">
+								계정이 없으신가요?
+							</div>
+							<button class="register_ask">
+								회원가입
+							</button>
+						</div>
+						<div class="hr_line_box">
+							<hr class="hr_line">
+							<div class="line_word">
+								OR
+							</div>
+							<hr class="hr_line">
+						</div>
+						<div class="social_login">
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialKakao.444bf93dafbd611eb4d1.svg?as-resource">
+							</div>
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialGoogle.a946248e0b9a978c9f77.svg?as-resource">
+							</div>
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialTwitter.cc596d57b16f837b9729.svg?as-resource">
+							</div>
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialApple.484c0da1e6a00a23e23f.svg?as-resource">
+							</div>
+							<div class="social_img">
+								<img src="https://an2-ast.amz.wtchn.net/ayg/images/icSocialLine.7f8a1fd121c282009db6.svg?as-resource">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 로그인 여기까지 -->
+		
+		<header id= "head">
+			<nav>
+				<section class= "headmargin">
+					<ul class= "headul">
+						<li class= "mainlogo">
+							<img src= "img/watcha.png"/>
+						</li>
+						<li class= "headsearchsetting"> 
+							<input type="text" placeholder="영화, 인물, 유저를 검색해보세요">
+						</li>
+						<li class= "headsetting">
+							<button class="login-button">&nbsp;&nbsp;로그인</button>
+						</li>
+						<li class= "headsetting">
+							<button class= "signup-button">회원가입</button>
+						</li>
+					</ul>
+				</section>
+			</nav>
+		</header>
+		<section class= "maincenter">
+			<div class= "centercontent">
+				<div class= "centercontent-title centercontent-padding">
+					<p class= "titlesize">
+						지금 뜨는 코멘트
+						<a class= "morelook">
+							<span>더보기&nbsp;</span>
+							<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iOXB4IiBoZWlnaHQ9IjE0cHgiIHZpZXdCb3g9IjAgMCA5IDE0IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPkhvbWUvU2VjdGlvbi9IZWFkZXIvel9JdGVtcy9BcnJvdzwvdGl0bGU+CiAgICA8ZyBpZD0iSG9tZS9TZWN0aW9uL0hlYWRlci96X0l0ZW1zL0Fycm93IiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgICAgIDxwb2x5bGluZSBpZD0iUGF0aC1Db3B5LTYiIHN0cm9rZT0iI0E1QTVBQSIgc3Ryb2tlLXdpZHRoPSIyIiBwb2ludHM9IjEgMSA3IDcgMSAxMyI+PC9wb2x5bGluZT4KICAgIDwvZz4KPC9zdmc+"/>
+						</a>
+					</p>
+				</div>
+				<section class= "centercontent-title">
+					<div class= "centercontent-size centerflex">
+						<ul class="review-list">
+			                <li class="review-item">
+			                    <div class="review-card">
+			                        <div class="review-image">
+			                            <img src="img/movieimage1.jpg" alt="영화 이미지">
+			                        </div>
+			                        <div class="review-content">
+			                            <div class="review-header">
+			                                <span class="review-author">박영웅</span>
+			                                <span class="review-rating">★★★★☆</span>
+			                            </div>
+			                            <div class="review-title">데드풀과 울버린</div>
+			                            <div class="review-text">엔드게임 이후 소중한 리부트 찬스를 PC로 날려버린...</div>
+			                            <div class="review-footer">
+			                                <span>👍 0</span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </li>
+			                <li class="review-item">
+			                    <div class="review-card">
+			                        <div class="review-image">
+			                            <img src="img/movieimage1.jpg" alt="영화 이미지">
+			                        </div>
+			                        <div class="review-content">
+			                            <div class="review-header">
+			                                <span class="review-author">박영웅</span>
+			                                <span class="review-rating">★★★★☆</span>
+			                            </div>
+			                            <div class="review-title">데드풀과 울버린</div>
+			                            <div class="review-text">엔드게임 이후 소중한 리부트 찬스를 PC로 날려버린...</div>
+			                            <div class="review-footer">
+			                                <span>👍 0</span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </li>
+			                <li class="review-item">
+			                    <div class="review-card">
+			                        <div class="review-image">
+			                            <img src="img/movieimage1.jpg" alt="영화 이미지">
+			                        </div>
+			                        <div class="review-content">
+			                            <div class="review-header">
+			                                <span class="review-author">박영웅</span>
+			                                <span class="review-rating">★★★★☆</span>
+			                            </div>
+			                            <div class="review-title">데드풀과 울버린</div>
+			                            <div class="review-text">엔드게임 이후 소중한 리부트 찬스를 PC로 날려버린...</div>
+			                            <div class="review-footer">
+			                                <span>👍 0</span>
+			                            </div>
+			                        </div>
+			                    </div>
+			                </li>
+			            </ul>
+					</div>
+				</section>
+			</div>
+			<div class= "centercontent">
+				<div class= "centercontent-title centercontent-padding">
+					<p class= "titlesize">
+						박스오피스 순위
+					</p>
+				</div>
+				<section class= "centercontent-title">
+					<div class= "centercontent-moviesize">
+						<ul class= "movieul">
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">1</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">2</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">3</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">4</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">5</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class= "centercontent">
+				<div class= "centercontent-title centercontent-padding">
+					<p class= "titlesize">
+						박스오피스 순위
+					</p>
+				</div>
+				<section class= "centercontent-title">
+					<div class= "centercontent-moviesize">
+						<ul class= "movieul">
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">1</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">2</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">3</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">4</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">5</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class= "centercontent">
+				<div class= "centercontent-title centercontent-padding">
+					<p class= "titlesize">
+						박스오피스 순위
+					</p>
+				</div>
+				<section class= "centercontent-title">
+					<div class= "centercontent-moviesize">
+						<ul class= "movieul">
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">1</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">2</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">3</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">4</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">5</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class= "centercontent">
+				<div class= "centercontent-title centercontent-padding">
+					<p class= "titlesize">
+						박스오피스 순위
+					</p>
+				</div>
+				<section class= "centercontent-title">
+					<div class= "centercontent-moviesize">
+						<ul class= "movieul">
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">1</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">2</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">3</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">4</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">5</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class= "centercontent">
+				<div class= "centercontent-title centercontent-padding">
+					<p class= "titlesize">
+						박스오피스 순위
+					</p>
+				</div>
+				<section class= "centercontent-title">
+					<div class= "centercontent-moviesize">
+						<ul class= "movieul">
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">1</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">2</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">3</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">4</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">5</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<div class= "centercontent">
+				<div class= "centercontent-title centercontent-padding">
+					<p class= "titlesize">
+						박스오피스 순위
+					</p>
+				</div>
+				<section class= "centercontent-title">
+					<div class= "centercontent-moviesize">
+						<ul class= "movieul">
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">1</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">2</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">3</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">4</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+							<li class= "movieli">
+								<a>
+									<div class= "movie-picture">
+										<img class= "movie-img" src="img/movieimage1.jpg"/>
+									</div>
+									<div class ="movie-rank">5</div>
+									<div class= "movie-content">
+										<div class= "movie-content-title">데드풀과 울버린</div>
+										<div class= "movie-content-year">2024  ・ 미국</div>
+										<div class= "movie-content-star">평균 ★ 3.4</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+		<div class="footer">
+	       <div class="real_time_box">
+	          <div class="real_time_text">
+	             	지금까지&nbsp;<span class="real_time_count">&#9733; 721,450,810 개의 평가가</span>&nbsp;쌓였어요.
+	          </div>
+	       </div>
+	       <div class="preference">
+	          <div class="preference_desc">
+	             <div class="service">서비스 이용약관 | <span style="font-weight: bold;">개인정보 처리방침</span> | 회사 안내</div>
+	              <div class="center">고객센터 | cs@watchapedia.co.kr, 02-515-9985</div>
+	              <div class="cooperation">제휴 및 대외 협력 | https://watcha.team/contact</div>
+	              <div class="address">주식회사 왓챠 | 대표 박태훈 | 서울특별시 서초구 강남대로 343 신덕빌딩 3층</div>
+	              <div class="number">사업자 등록 번호 211-88-66013</div>
+	              <div class="watcha">WATCHAPEDIA 2024 by WATCHA, Inc. All rights reserved.</div>
+	           </div>
+	        </div>
+	     </div>
+	</div>
+</body>
+</html>

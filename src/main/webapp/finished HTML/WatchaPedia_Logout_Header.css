@@ -1,0 +1,104 @@
+@charset "UTF-8";
+* { box-sizing: border-box; }
+body {
+	margin: 0 auto;
+}
+#border {
+	border: 1px solid red;
+}
+/* 로그아웃 헤더 */
+#head {
+	position: fixed;
+    top: 0px;
+    background-color: #fff;
+    box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.08);
+    height: 62px;
+    transition: background-color 200ms;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#head > nav {
+	width: 100%;
+	height: 100%;
+}
+
+.headmargin {
+	position: relative;
+	max-width: 1320px;
+	margin-right: auto;
+   	margin-left: auto;
+   	height: 100%;
+}
+
+.headul {
+	display: flex;
+    align-items: center;
+    padding: 0;
+    padding-inline-start: 0;
+    margin: 0;
+    margin-block: 0 0;
+    margin-inline: 0;
+    list-style-type: none;
+    width: 100%;
+	height: 100%;
+}
+
+
+.headsearchsetting {
+    width: 300px;
+    flex-shrink: 1;
+    margin: 0 0 0 auto;
+    transition: all 0.5s;
+    height: 62px;
+    position: relative;
+    display: flex;
+	align-items: center;
+}
+
+.headsetting {
+	position: relative;
+    display: flex;
+	align-items: center;
+	height: 62px;
+	flex-shrink: 0;
+	margin: 0 0 0 10px;
+	width: 63px;
+}
+
+.headsearchsetting input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+	outline: none;
+}
+
+.headsetting {
+    margin-left: 10px;
+}
+
+.headsetting button {
+    padding: 0 0;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 200ms;
+    font-size: 13px;
+	font-stretch: 100%;
+}
+
+.headsetting button:hover {
+    pointer-events: none;
+}
+.header_profile_img {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	cursor: pointer;
+}

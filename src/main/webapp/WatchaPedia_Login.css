@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+* { 
+	box-sizing: border-box; 
+}
+
+.border { 
+	border: 1px solid red; 
+}
+
+body { 
+	height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* 로그인 화면 여기부터 */
+
+.login_main_screen {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-color: rgba(0, 0, 0, 0.56);
+	z-index: 502;
+}
+.login_box {
+	width: 375px;
+	height: 595.02px;
+	background-color: white;
+	overflow: hidden;
+	border-radius: 6px;
+	padding: 32px 0 16px;
+    display: flex;
+    justify-content: center;
+}
+.login_inner {
+	width: 358px;
+	height: 631.02px;
+}
+.login_header {
+	width: 358px;
+	height: 42.02px;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_word {
+	width: 358px;
+	height: 30px;
+    margin: 24px 0 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input_box {
+	width: 358px;
+	height: 467px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input_inner {
+	width: 318px;
+	height: 467px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: -30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input_inner_box {
+	width: 318px;
+	height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input_ep {
+	width: 318px;
+    height: 44px;
+	padding: 4px 0;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    border: none;
+}
+#user_id {
+	width: 310px;
+	height: 22px;
+	outline: none;
+	background-color: #f5f5f5;
+	border: none;
+	margin-left: auto;
+}
+#user_pw {
+	width: 310px;
+	height: 22px;
+	outline: none;
+	background-color: #f5f5f5;
+	border: none;
+	margin-left: auto;
+}
+.login_button_box {
+	width: 318px;
+	height: 40px;
+	font-weight: 500;
+    margin: 16px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login_button {
+	width: 318px;
+	height: 40px;
+	font-weight: 500;
+	background-color: #ff2f6e;
+	color: #fff;
+    padding: 0 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+.pw_ask {
+	width: 318px;
+	height: 20px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff2f6e;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 20px 0 14px;
+}
+.account_ask {
+	width: 318px;
+	height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.account_box {
+	width: 134.67px;
+	height: 18px;
+	color: #7e7e7e;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register_ask {
+	color: #ff2f6e;
+	outline: none;
+	border: none;
+	background-color: white;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	background-color: white;
+}
+.hr_line_box {
+	width: 318px;
+	height: 21px;
+    margin: 24px 0;
+    color: #141414;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hr_line {
+	width: 136px;
+	color: #e0e0e0;
+}
+.line_word {
+	position: relative;
+	width: 46.7px;
+	height: 20px;
+	color: #7e7e7e;
+}
+.social_login {
+	width: 318px;
+	height: 50px;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.social_login div {
+	width: 50px;
+	height: 50px;
+    border-radius: 50%;
+}
+.social_login div:nth-child(1) {
+    background-color: #F9E945;
+    cursor: pointer;
+}
+.social_login div:nth-child(2) {
+    background-color: #fff;
+    border: 1px solid #e3e4e6;
+    cursor: pointer;
+}
+.social_login div:nth-child(3) {
+    background-color: #1da1f3;;
+	cursor: pointer;
+}
+.social_login div:nth-child(4) {
+    background-color: #000;
+    cursor: pointer;
+}
+.social_login div:nth-child(5) {
+    background-color: #00c300;
+    cursor: pointer;
+}
+.social_img {
+	width: 50px;
+	height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* 로그인 화면 여기까지 */

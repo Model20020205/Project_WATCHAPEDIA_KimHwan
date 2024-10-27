@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>평가한 코멘트들 페이지</title>
+	<link rel="stylesheet" href="WatchaPedia_Eva_Comment_Mine.css">
+</head>
+<body>
+	<!-- 로그인 헤더 -->
+		<header class="header_box">
+			<div class="header">
+				<div class="inner_header">
+					<div class="watcha_logo">
+						<a class="watcha_logo_box" href="WatchaPedia_Main.jsp">
+							<img src="img/watcha.png">
+						</a>
+					</div>
+					<div class="right_box">
+						<div class="search_box">
+							<input type="text"placeholder="영화, 인물 유저를 검색해보세요.">
+						</div>
+							<a class="login_button" href="WatchaPedia_Login.jsp">로그인</a>
+							<form action="logoutCheck" method="post">
+								<button type="submit" class="login_button" href="WatchaPedia_Main.jsp">로그아웃</button>
+							</form>
+						<a class="register_button" href="WatchaPedia_Register.jsp">
+							회원가입
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- 로그인 헤더 여기까지 -->
+		<div class="more_content">
+			<header class="more_header">
+				<div class="more_header_direction">
+				</div>
+				<div class="more_comment_box">
+					평가한 작품들
+				</div>
+			</header>
+			<div class="more_like_box">
+				<div class="more_like_small_box">
+					<div class="more_like_select_box">
+						<span class="_0RJ_8 j5Hqr yudZz" style="background-image: url(&quot;https://an2-ast.amz.wtchn.net/ayg/images/icDropDownGray.eb179356f4205da40ec7.svg?as-resource&quot;); width: 24px; height: 24px;"></span>
+						<div class="more_like">
+							좋아요 순
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="more_middle_header">
+				<div class="more_middle_header2">
+				<div class="more_middle_like_content">	<!-- 좋아요 순 -->
+					<div class="more_dupl_div">	<!-- 코멘트 div 반복 시작 -->
+						<div class="more_dupl_top">
+							<div class="more_dupl_nick_box">
+								<img class="more_profile_img" src="<%=dto.getProfile_img() %>">
+								<div class="more_user_nick"></div>
+							</div>
+							<div class="more_dupl_star">
+								<div class="more_star_img">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+								</div>
+								<div class="more_star_number">
+									<!-- 별점 -->
+								</div>
+							</div>
+						</div>
+						<div class="more_dupl_content">
+						<input class="eva_idx" type="hidden" value="<%=dto.getEva_idx() %>">
+							<!-- 평가글 내용 -->
+						</div>
+						<div class="more_dupl_down">
+							<div class="more_dupl_down_box">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								<!-- 좋아요 개수 -->
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								<!-- 댓글 개수 -->
+							</div>
+						</div>
+						<div class="more_like_button">
+							좋아요
+						</div>
+					</div>	<!-- 코멘트 div 반복 끝 -->
+				</div>	<!-- 좋아요 순 -->	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>코멘트 상세페이지</title>
+	<link rel="stylesheet" href="WatchaPedia_Comment_Detail.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<!-- jQuery 사용 -->
+	<script>
+		$(function(){
+			$(".likpos_button_box button:nth-of-type(2)").click(function(){
+				$(".ins_main_screen").css("display", "flex");
+			});
+			$(".insert_out").click(function(){	// 댓글 클릭 시 창 열림
+				$(".ins_main_screen").css("display", "none");
+			});
+			$(".modify_box").click(function(){
+				$(".modify_select").css("display", "block");
+				event.stopPropagation();
+			});
+			$(".comment_main_screen").click(function(){	// 댓글 수정 클릭 시 창 열림
+				$(".modify_select").css("display", "none");
+			});
+			$(".modify_select_text").first().click(function(){	// 댓글 수정 클릭 클래스 명이 같아서 first 사용
+				$(".post_main_screen").css("display", "flex");
+			});
+			$(".insert_out").click(function(){
+				$(".post_main_screen").css("display", "none");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="comment_main_screen">
+		
+		<!-- 댓글창 열기 -->
+
+		<div class="ins_main_screen">
+			<div class="insert_comment">
+				<header class="insert_header_box">
+					<div class="insert_title_box">데드풀과 울버린</div>
+					<button class="insert_out">
+						<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+					</button>
+				</header>
+				<div class="insert_content_box">
+					<textarea class="insert_box"  placeholder="이 작품에 대한 생각을 자유롭게 표현해주세요."></textarea>
+					<div class="down_box">
+						<div class="korean_count">0/10000</div>
+						<button class="save_button">저장</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 댓글창 열기 여기까지 -->	
+		
+		<!-- 댓글 수정 클릭 시 뜨는 창 -->
+		<div class="post_main_screen">
+			<div class="insert_comment">
+				<header class="insert_header_box">
+					<div class="insert_title_box">댓글</div>
+					<button class="insert_out">
+						<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+					</button>
+				</header>
+				<div class="insert_content_box">
+					<textarea class="insert_box"></textarea>
+					<div class="down_box">
+						<div class="korean_count">0/10000</div>
+						<button class="save_button">수정</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 댓글 수정 클릭 시 뜨는 창 여기까지 -->
+			
+		<!-- header --> 
+		
+		<header id= "head">
+			<nav>
+				<section class= "headmargin">
+					<ul class= "headul">
+						<li class= "mainlogo">
+							<img src= "img/watcha.png"/>
+						</li>
+						<li class= "headsearchsetting"> 
+							<input type="text" placeholder="영화, 인물, 유저를 검색해보세요">
+						</li>
+						<li class= "headsetting">
+							<button class="login-button">&nbsp;&nbsp;로그인</button>
+						</li>
+						<li class= "headsetting">
+							<button class= "signup-button">회원가입</button>
+						</li>
+					</ul>
+				</section>
+			</nav>
+		</header>
+		
+		<!-- header -->
+		
+		<div class="comment_main_content">
+			<div class="comment_inner_content">
+				<div class="comment_top_inner">
+					<div class="top_inner_title">
+						<div class="comment_title_box">
+							<div class="comment_user_info">
+								<div class="comment_user_img_box">
+									<img class="user_profile_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+								</div>
+								<div class="comment_user_content">
+									<div class="user_top_content">
+										김호진 펠릭스
+									</div>
+									<div class="user_down_content">
+										6개월 전
+									</div>
+								</div>
+							</div>
+							<div class="comment_movie_title">
+								<div class="comment_movie_title_box">
+									<div class="comment_movie_topic">
+										데드풀과 울버린
+									</div>
+									<div class="comment_movie_genre">
+										영화 2024
+									</div>
+								</div>
+							</div>
+							<div class="comment_movie_star">
+								<div class="comment_star_box">
+									<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									<div class="comment_star_text">4.0</div>
+								</div>
+							</div>
+						</div>
+						<div class="comment_poster_box">
+							<img class="comment_poster_img_edit" src="https://an2-img.amz.wtchn.net/image/v2/JiGL_lPIIQ3P5vMgdbswuA.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1qZ3dlRFF3TUhFNE1DSmRMQ0p3SWpvaUwzWXlMM04wYjNKbEwybHRZV2RsTHprNU16WXdOalkzTlRVeU1qZzFOVFVpZlEuVXkwQnk5VkphY3lmSGh4VUs1dnZPS25zd0VwdVJzMlIwTUppMWZCX1k4WQ">
+						</div>
+					</div>
+					<div class="top_inner_content">
+						내가 마블의 예수님이야!
+						그러니까 줄여서 MJ
+						다음은 너야 피터 파커, 이젠 뭐든 가능 할 거 같아
+						-
+						보이드라는 폭스의 낙원을 잠시나마 훔쳐 볼 수 있어서 행복한 시간이었다
+						헬로 디즈니가 아니라 굿 바이 폭스
+					</div>
+					<div class="top_inner_count">
+						<div class="comment_likpost_box">
+							<div class="comment_like_count">좋아요 281</div>
+							<div class="comment_post_count">댓글 3</div>
+						</div>
+					</div>
+					<div class="like_comment">
+						<div class="likpos_button_box">
+							<button class="likpos_button">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+								</svg>
+								좋아요
+							</button>
+							<button class="likpos_button">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+								</svg>
+								댓글
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="comment_down_inner">
+					<!-- 여기서부터 코멘트 div 시작 -->
+					<div class="comment_list">
+						<div class="comment_list_box">
+							<div class="list_img_box">
+								<img class="comment_user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+							</div>
+							<div class="list_comment_content_box">
+								<div class="list_comment_user_name">
+									<div class="list_comment_user_name_box">
+										김호진 펠릭스
+									</div>
+									<div class="comment_writedate">
+										8일 전
+									</div>
+								</div>
+								<div class="list_comment_content">
+									줄여서 엠제이를 개봉 전에 먼저 쓴게 올 해 왓챠피디아 최대의 업적
+								</div>
+								<div class="list_comment_likcou">
+									<div class="likcou_box">
+										<div class="likcou_text">좋아요</div>
+										<div class="likcou_img">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+											</svg>
+											22
+										</div>
+									</div>
+									<div class="modify_box">
+										<svg class="modify_button" viewBox="0 0 24 24" focusable="false" height="24" width="24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modify_select">
+						<div class="modify_select_text">
+							댓글 수정
+						</div>
+						<div class="modify_select_text">
+							댓글 삭제
+						</div>
+					</div>
+					<!-- 여기서부터 코멘트 div 끝 -->
+					
+					<!-- 여기서부터 코멘트 div 시작 -->
+					<div class="comment_list">
+						<div class="comment_list_box">
+							<div class="list_img_box">
+								<img class="comment_user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+							</div>
+							<div class="list_comment_content_box">
+								<div class="list_comment_user_name">
+									<div class="list_comment_user_name_box">
+										김호진 펠릭스
+									</div>
+									<div class="comment_writedate">
+										8일 전
+									</div>
+								</div>
+								<div class="list_comment_content">
+									줄여서 엠제이를 개봉 전에 먼저 쓴게 올 해 왓챠피디아 최대의 업적
+								</div>
+								<div class="list_comment_likcou">
+									<div class="likcou_box">
+										<div class="likcou_text">좋아요</div>
+										<div class="likcou_img">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+											</svg>
+											22
+										</div>
+									</div>
+									<div class="modify_box">
+										<svg class="modify_button" viewBox="0 0 24 24" focusable="false" height="24" width="24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modify_select">
+						<div class="modify_select_text">
+							댓글 수정
+						</div>
+						<div class="modify_select_text">
+							댓글 삭제
+						</div>
+					</div>
+					<!-- 여기서부터 코멘트 div 끝 -->
+					<!-- 여기서부터 코멘트 div 시작 -->
+					<div class="comment_list">
+						<div class="comment_list_box">
+							<div class="list_img_box">
+								<img class="comment_user_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+							</div>
+							<div class="list_comment_content_box">
+								<div class="list_comment_user_name">
+									<div class="list_comment_user_name_box">
+										김호진 펠릭스
+									</div>
+									<div class="comment_writedate">
+										8일 전
+									</div>
+								</div>
+								<div class="list_comment_content">
+									줄여서 엠제이를 개봉 전에 먼저 쓴게 올 해 왓챠피디아 최대의 업적
+								</div>
+								<div class="list_comment_likcou">
+									<div class="likcou_box">
+										<div class="likcou_text">좋아요</div>
+										<div class="likcou_img">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+											</svg>
+											22
+										</div>
+									</div>
+									<div class="modify_box">
+										<svg class="modify_button" viewBox="0 0 24 24" focusable="false" height="24" width="24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modify_select">
+						<div class="modify_select_text">
+							댓글 수정
+						</div>
+						<div class="modify_select_text">
+							댓글 삭제
+						</div>
+					</div>
+					<!-- 여기서부터 코멘트 div 끝 -->
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- footer -->
+		<div class="footer">
+			<div class="real_time_box">
+				<div class="real_time_text">
+					지금까지&nbsp;<span class="real_time_count">&#9733; 721,450,810 개의 평가가</span>&nbsp;쌓였어요.
+				</div>
+			</div>
+			<div class="preference">
+				<div class="preference_desc">
+					<div class="service">서비스 이용약관 | <span style="font-weight: bold;">개인정보 처리방침</span> | 회사 안내</div>
+					<div class="center">고객센터 | cs@watchapedia.co.kr, 02-515-9985</div>
+					<div class="cooperation">제휴 및 대외 협력 | https://watcha.team/contact</div>
+					<div class="address">주식회사 왓챠 | 대표 박태훈 | 서울특별시 서초구 강남대로 343 신덕빌딩 3층</div>
+					<div class="number">사업자 등록 번호 211-88-66013</div>
+					<div class="watcha">WATCHAPEDIA 2024 by WATCHA, Inc. All rights reserved.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,443 @@
+@charset "UTF-8";
+* { box-sizing: border-box; }
+body {
+	margin: 0 auto;
+}
+#border {
+	border: 1px solid red;
+}
+.main_screen {
+	width: 100%;
+	height: 100%;
+}
+
+/* 헤더 여기서부터 */
+
+.header_box {
+	width: 100%;
+	border-bottom: 0.5px solid #ddd;
+	z-index: 501;
+	position: fixed;
+	background-color: white;
+}
+.header {
+	width: 100%;
+	height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inner_header {
+	width: 1320px;
+	height: 62px;
+	margin-left: 60px;
+	margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.watcha_logo_box {
+	width: 166px;
+	height: 62px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+.watcha_logo {
+	width: 151px;
+	height: 32.83px;
+	margin-right: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.right_box {
+	width: 459px;
+	height: 62px;
+    display: flex;
+    align-items: center;
+}
+.search_box {
+	width: 300px;
+	height: 38px;
+	display: flex;
+	align-items: center;
+	color: #b9babe;
+	border: none;
+}
+.search_box input {
+	width: 100%;
+	height: 100%;
+	border-radius: none;
+	border: none;
+	outline: none;
+	background-color: #f5f5f5;
+}
+.login_button {
+	width: 68px;
+	height: 62px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 0 10px;
+	font-weight: 500;
+	font-size: 13px;
+	color: #747474;
+	cursor: pointer;
+	text-decoration: none;
+	border: none;
+	background: none;
+}
+.register_button {
+	width: 76px;
+	height: 62px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 0 10px;
+	font-weight: 500;
+	font-size: 13px;
+	color: #747474;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	background-color: white;
+}
+.profile_move {
+	border: none;
+	background-color: white;
+}
+.profile_img {
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 10px;
+    font-weight: 500;
+    font-size: 13px;
+    color: #747474;
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    background-color: white;
+}
+
+/* 헤더 여기까지 */
+
+
+.making_middle_screen {
+	width: 100%;
+	height: 100%;
+	padding-top: 62px;
+    display: flex;
+    justify-content: center;
+}
+.middle_content_box {
+	width: 1320px;
+	height: 100%;
+	margin-top: 29px;
+	margin-bottom: 60px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.middle_top_profile_box {
+	width: 1320px;
+	height: 217px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.middle_top_profile {
+	width: 1320px;
+	height: 160px;
+	margin-bottom: 16px;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.middle_profile_img {
+	width: 84px;
+	height: 84px;
+}
+.dir_profile_img {
+	width: 84px;
+	height: 84px;
+	border-radius: 6px;
+}
+.middle_profile_info_box {
+	width: 50%;
+	height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.middle_profile_name {
+	width: 50%;
+	height: 32px;
+	font-size: 25px;
+    line-height: 32px;
+    letter-spacing: -0.8px;
+}
+.middle_profile_genre {
+	width: 50%;
+	height: 18px;
+	margin-top: 10px;
+	font-size: 13px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #959595;
+    letter-spacing: -0.2px;
+}
+.middle_profile_like {
+	width: 1314px;
+	height: 41px;
+	margin: 3px;
+	border-top: 1px solid #ededed; 
+	border-bottom: 1px solid #ededed;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    color:  #5e5e64;
+    cursor: pointer;
+}
+.middle_profile_like:hover {
+	width: 1314px;
+	height: 41px;
+	border-radius: 3px;
+	background-color:  #ededed;
+	color: black;
+}
+.middle_movie_info {
+	width: 1320px;
+	height: 100%;
+}
+.director_regarding {
+	width: 1320px;
+	height: 100%;
+	margin: 31px 0 65px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.movie_name {
+	width: 1320px;
+	height: 26px;
+    margin: 15px 0 24px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #292a32;
+    letter-spacing: -0.5px;
+}
+.director_intro {
+	width: 1320px;
+	height: 30px;
+	padding-bottom: 11px;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #292a32;
+    letter-spacing: -0.34px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+.type_box {
+	width: 1320px;
+	height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 31px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 16px;
+    color: #74747b;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+.none1 {
+	width: 48px;
+}
+.none2 {
+	width: 80px;
+}
+.director_title {
+	width: 581px;
+	height: 16px;
+	padding-left: 9px;
+}
+.director_role {
+	width: 149px;
+	height: 16px;
+	padding-left: 9px;
+}
+.director_evaluation {
+	width: 110px;
+	height: 16px;
+	padding-left: 9px;
+}
+.director_service {
+	width: 125px;
+	height: 16px;
+	padding-left: 9px;
+}
+.director_movie_info_div {
+	width: 1320px;
+	height: 132px;
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.director_movie_year {
+	width: 48px;
+	height: 18px;
+	color: #74747b;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 18px;
+	letter-spacing: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.director_movie_img {
+	width: 80px;
+	height: 114px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.dir_movie_poster {
+	width: 80px;
+	height: 114px;
+	border-radius: 6px;
+}
+.director_movie_name {
+	width: 581px;
+	height: 16px;
+	padding-left: 9px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.director_movie_director {
+	width: 149px;
+	height: 18px;
+	padding-left: 9px;
+	font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.director_movie_ave {
+	width: 110px;
+	height: 18px;
+	padding-left: 9px;
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+
+/* footer 부분 */
+.footer {
+	width: 100%;
+	height: 257px;
+}
+.real_time_box {
+	width: 100%;
+	height: 62px;
+	background-color: #101113;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.real_time_text {
+	width: 100%;
+	height: 24px;
+	color: #d4d4d4;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 24px;
+	display: flex;
+    justify-content: center;
+}
+.real_time_count {
+	color: #ff2f6e;
+}
+.preference_desc {
+	width: 1320px;
+	height: 137px;
+}
+.preference {
+	width: 100%;
+	height: 195px;
+	background-color: #1c1d1f;
+	padding: 20px 0 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service {
+	font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #a5a5a7;
+}
+.center {
+	margin-top: 12px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+	color: #a5a5a7;
+}
+.cooperation {
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+	color: #a5a5a7;
+}
+.address {
+	margin-top: 13px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+	color: #848485;
+}
+.number {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+	color: #848485;
+}
+.watcha {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    color: #848485;
+}

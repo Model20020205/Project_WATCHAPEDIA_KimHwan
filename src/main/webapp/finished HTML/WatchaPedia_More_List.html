@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>코멘트 더보기 페이지</title>
+	<link rel="stylesheet" href="WatchaPedia_More_List.css">
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	<!-- jQuery 사용 -->
+	<script>
+		$(function() {
+			$(".more_like").click(function(){	// 좋아요 버튼 클릭 시 뜨는 창
+				$(".arr_main_screen").css("display", "flex");
+			});
+			$(".arr_button").click(function(){	// 좋아요 버튼 클릭 시 뜨는 창
+				$(".arr_main_screen").css("display", "none");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="more_main_screen">
+		
+		
+	<!-- 좋아요 순 클릭 시 -->
+	<div class="arr_main_screen">
+		<div class="arr_box">
+			<div class="arr_title">
+				<div class="arr_text">
+					정렬 기준
+				</div>
+				<div class="arr_button">
+					<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+				</div>
+			</div>
+			
+			
+			
+			<!-- 반복 구간 시작 -->
+			<div class="arr_type_box">
+				<div class="arr_type">
+					<div class="arr_type_text">좋아요 순</div>
+					<div class="arr_arrow">
+						✔️
+					</div>
+				</div>
+			</div>
+			<!-- 반복 구간 끝 -->
+			
+			
+			
+			<!-- 반복 구간 시작 -->
+			<div class="arr_type_box">
+				<div class="arr_type">
+					<div class="arr_type_text">작성 순</div>
+					<div class="arr_arrow">
+						✔️
+					</div>
+				</div>
+			</div>
+			<!-- 반복 구간 끝 -->
+			
+			
+			
+		</div>
+	</div>
+	<!-- 좋아요 순 클릭 시 여기까지 -->
+		
+		<!-- header -->
+		<header id= "head">
+			<nav>
+				<section class= "headmargin">
+					<ul class= "headul">
+						<li class= "mainlogo">
+							<img src= "img/watcha.png"/>
+						</li>
+						<li class= "headsearchsetting"> 
+							<input type="text" placeholder="영화, 인물, 유저를 검색해보세요">
+						</li>
+						<li class= "headsetting">
+							<button class="login-button">&nbsp;&nbsp;로그인</button>
+						</li>
+						<li class= "headsetting">
+							<button class= "signup-button">회원가입</button>
+						</li>
+					</ul>
+				</section>
+			</nav>
+		</header>
+		<!-- header -->
+		
+		
+		
+		
+		<div class="more_content">
+			<header class="more_header">
+				<div class="more_header_direction">
+					<div class="direction_box">
+						<svg class="arrow" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+					</div>
+				</div>
+				<div class="more_comment_box">
+					코멘트
+				</div>
+			</header>
+			<div class="more_like_box">
+				<div class="more_like_small_box">
+					<div class="more_like_select_box">
+						<div class="more_like">
+							<span class="_0RJ_8 j5Hqr yudZz" style="background-image: url(&quot;https://an2-ast.amz.wtchn.net/ayg/images/icDropDownGray.eb179356f4205da40ec7.svg?as-resource&quot;); width: 24px; height: 24px;"></span>
+							좋아요 순
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="more_middle_header">
+				<div class="more_middle_header2">
+					<div class="more_middle_content">
+						
+						
+						
+						<!-- 코멘트 div 반복 시작 -->
+						<div class="more_dupl_div">
+							<div class="more_dupl_top">
+								<div class="more_dupl_nick_box">
+									<img class="more_profile_img" src="https://an2-img.amz.wtchn.net/image/v2/kjsiIOiES19xUBQqiOJrfg.jpg?jwt=ZXlKaGJHY2lPaUpJVXpJMU5pSjkuZXlKdmNIUnpJanBiSW1SZk1UQXdlREV3TUNKZExDSndJam9pTDNZeUwzTjBiM0psTDNWelpYSXZVV2Q1TlRFeU5tSk5lRVJxYXk5d2NtOW1hV3hsTHpFMk1qazVOakV4TlRNNE56QTBOVEEyT0RnaWZRLlN2QUl6US1GNUZQUnFMWTZBMVlpLWVOaHFnZ2Z5Tm16X1YwOXc4ZmxwaUE">
+									<div class="more_user_nick">김호진 펠릭스</div>
+								</div>
+								<div class="more_dupl_star">
+									<div class="more_star_img">
+										<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 20 19"><path fill="#FFC633" d="m10 0 3.233 5.55 6.278 1.36-4.28 4.79.647 6.39L10 15.5l-5.878 2.59.647-6.39L.49 6.91l6.278-1.36L10 0Z"></path></svg>
+									</div>
+									<div class="more_star_number">
+										3.0
+									</div>
+								</div>
+							</div>
+							<div class="more_dupl_content">
+								인수합병에 대한 재치있는 비즈니스 영화, 경혈을 찾아 침을 놓아가며 갈증을 잠시 해결해주는 팬서비스무비.
+							</div>
+							<div class="more_dupl_down">
+								<div class="more_dupl_down_box">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M5.70833 10.15H3.70312C3.03866 10.15 2.5 10.6887 2.5 11.3531V16.8221C2.5 17.4865 3.03866 18.0252 3.70312 18.0252H5.70833" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.6553 15.7475C16.4815 17.0515 15.3692 18.0252 14.0537 18.0252H5.30566V9.61157L7.45753 2.07233C7.56975 1.67916 7.9397 1.41677 8.33929 1.5034C9.30034 1.71174 10.9255 2.32596 10.9255 4.09743V6.62225C10.9255 6.84374 11.105 7.02329 11.3265 7.02329H15.1911C16.5836 7.02329 17.6568 8.25105 17.4717 9.63127C17.1984 11.6699 16.927 13.7087 16.6553 15.7475Z" stroke="#666666" stroke-width="1.5" stroke-linejoin="round"></path>
+									</svg>
+									<!-- 좋아요 개수 -->
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.5878 2H7.40656C3.84184 2 0.950684 4.89112 0.950684 8.46098C0.950684 12.0308 3.84184 14.922 7.41174 14.922H8.84177C8.90394 14.922 8.95058 14.9738 8.94539 15.0359L8.66561 17.3623C8.60861 17.8545 9.16301 18.181 9.56715 17.8908L15.0386 13.9168C17.0023 12.4609 18.0489 10.7614 18.0489 8.46098C18.0489 4.89112 15.1577 2 11.5878 2Z" stroke="#666666" stroke-width="1.5"></path>
+									</svg>
+									<!-- 댓글 개수 -->
+								</div>
+							</div>
+							<div class="more_like_button">
+								좋아요
+							</div>
+						</div>
+						<!-- 코멘트 div 반복 끝 -->
+						
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
