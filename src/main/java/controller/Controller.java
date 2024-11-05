@@ -33,8 +33,6 @@ import action.WatchaPediaStarEvaAction;
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 한글 인코딩 설정 : Post방식은 한글깨짐 방지
-		request.setCharacterEncoding("UTF-8");
 		
 		String watcha = request.getParameter("watcha");
 		System.out.println("watcha = " + watcha);
