@@ -30,16 +30,16 @@ public class WatchaPediaEvaUpdateAction implements Action {
 		int mm_idx = Integer.parseInt(request.getParameter("mm_idx"));
 		System.out.println("회원_IDX = " + mm_idx);
 		
-		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		
 		// 코멘트(=평가글) 상세 페이지 (프로필 사진, 닉네임, 영화 제목, 개봉 연도, 별점, 평가글 내용, 좋아요 개수, 댓글 개수)
-		ArrayList<CommentDetailDto> showComInfo = new ArrayList<CommentDetailDto>();
+		ArrayList<CommentDetailDto> showComInfo = null;
 		
 		// 코멘트(프로필 사진, 닉네임, 댓글 내용, 댓글 작성일자, 댓글 좋아요 개수)
-		ArrayList<ReplyDto> showReply = new ArrayList<ReplyDto>();
+		ArrayList<ReplyDto> showReply = null;
 		
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
 			dDao.updateComment(content, eva_idx, mm_idx);
 			showComInfo = dDao.showComment(eva_idx);
 			showReply = dDao.showReply(eva_idx);

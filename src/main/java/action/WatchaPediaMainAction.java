@@ -20,30 +20,28 @@ public class WatchaPediaMainAction implements Action {
 		// 왓챠피디아 메인 페이지 Action
 		System.out.println("메인 페이지 이동 Action 성공");
 		
-		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		
 		// 지금 뜨는 코멘트 
-		ArrayList<RightUplDto> showRight = new ArrayList<RightUplDto>();
+		ArrayList<RightUplDto> showRight = null;
 
 		// 영화 메인 페이지 개봉연도 내림차순
-		ArrayList<RecentListDto> showRecent = new ArrayList<RecentListDto>();
+		ArrayList<RecentListDto> showRecent = null;
 		
 		// 영화 메인 페이지 별점 순위 내림차순
-		ArrayList<ScoreDescDto> showDesc = new ArrayList<ScoreDescDto>();
-		try {
-			showRight = dDao.showRight();
-			showRecent = dDao.showRecent();
-			showDesc = dDao.showScoDesc();
-		} catch(Exception e) { e.printStackTrace(); }
+		ArrayList<ScoreDescDto> showDesc = null;
 		
 		// 연령 설정
 		int avg_idx = 1;
 		
 		// 영화 메인 페이지 연령별 순위
-		ArrayList<RatedRDto> showAvg = new ArrayList<RatedRDto>();
+		ArrayList<RatedRDto> showAvg = null;
 		
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
+			showRight = dDao.showRight();
+			showRecent = dDao.showRecent();
+			showDesc = dDao.showScoDesc();
 			showAvg = dDao.showRate(avg_idx);
 		} catch(Exception e) { e.printStackTrace(); }
 		

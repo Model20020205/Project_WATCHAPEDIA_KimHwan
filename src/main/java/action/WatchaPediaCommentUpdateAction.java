@@ -30,8 +30,8 @@ public class WatchaPediaCommentUpdateAction implements Action {
 		int eva_idx = Integer.parseInt(request.getParameter("eva_idx"));
 		
 		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		try {
+			DetailPageDao dDao = new DetailPageDao();
 			dDao.updateReply(reply_content, reply_idx);
 		} catch(Exception e) {
 			e.printStackTrace();

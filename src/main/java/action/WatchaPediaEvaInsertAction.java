@@ -31,11 +31,11 @@ public class WatchaPediaEvaInsertAction implements Action {
 		System.out.println("회원_IDX = " + mm_idx);
 		
 		// 영화 코멘트 부분
-		ArrayList<CommentDto> showAll = new ArrayList<CommentDto>();
+		ArrayList<CommentDto> showAll = null;
 		
-		
-		DetailPageDao dDao = new DetailPageDao();
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
 			dDao.insertComment(movie_idx, content, mm_idx);
 			showAll = dDao.showAll(movie_idx);
 		} catch(Exception e) {

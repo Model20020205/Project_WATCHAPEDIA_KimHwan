@@ -22,8 +22,8 @@ public class RegisterAction implements Action {
 		String id = request.getParameter("id");
 		String password = request.getParameter("password");
 		
-		DetailPageDao dDao = new DetailPageDao();
 		try {
+			DetailPageDao dDao = new DetailPageDao();
 			dDao.registerCheck(nickname, id, password);
 		} catch(Exception e) {
 			e.printStackTrace();

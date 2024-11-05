@@ -25,16 +25,16 @@ public class WatchaPediaDetailAction implements Action {
 		System.out.println("영화_IDX = " + movie_idx);
 		
 		// 영화 상세 정보 부분
-		ArrayList<DetailPageDto> showList = new ArrayList<DetailPageDto>();
+		ArrayList<DetailPageDto> showList = null;
 		
 		// 출연, 제작 리스트 전체 출력
-		ArrayList<StaffDto> showStaff = new ArrayList<StaffDto>();
+		ArrayList<StaffDto> showStaff = null;
 		
 		// 영화 코멘트 부분(프로필, 닉네임, 별점, 평가글 내용, 좋아요 개수, 댓글 개수)
-		ArrayList<CommentDto> showAll = new ArrayList<CommentDto>();
+		ArrayList<CommentDto> showAll = null;
 		
 		// ArrayList의 참조변수에 null 값을 부여한 이유는 어떤 영화_IDX에서 가져오는지를 알기 위해서
-		ArrayList<MoreCommentDto> showScroll = new ArrayList<MoreCommentDto>();
+		ArrayList<MoreCommentDto> showScroll = null;
 
 		// 전체 코멘트 개수 출력
 		int allCountComment = 1;
@@ -42,9 +42,9 @@ public class WatchaPediaDetailAction implements Action {
 		// 임의 설정
 		int pageNum = 1;
 		
-		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
 			showList = dDao.showList(movie_idx);
 			showStaff = dDao.showStaff(movie_idx);
 			showAll = dDao.showAll(movie_idx);

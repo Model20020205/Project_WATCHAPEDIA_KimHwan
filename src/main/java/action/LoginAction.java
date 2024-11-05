@@ -22,9 +22,9 @@ public class LoginAction implements Action {
 		String id = request.getParameter("id");	// 아이디 받아오기
 		String password = request.getParameter("password");	// 비밀번호 받아오기
 		
-		DetailPageDao dDao = new DetailPageDao();
 		int mm_idx = 0;	// 임시 설정
 		try {
+			DetailPageDao dDao = new DetailPageDao();
 			mm_idx = dDao.loginCheck(id, password);
 		} catch(Exception e) {
 			e.printStackTrace();

@@ -23,10 +23,10 @@ public class WatchaPediaEvaDeleteAction implements Action {
 		int mm_idx = Integer.parseInt(request.getParameter("mm_idx"));
 		System.out.println("회원_IDX = " + mm_idx);
 		
-		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
 			dDao.deleteComment(eva_idx, mm_idx);
 		} catch(Exception e) { e.printStackTrace(); }
 		

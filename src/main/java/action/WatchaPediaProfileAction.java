@@ -20,23 +20,21 @@ public class WatchaPediaProfileAction implements Action {
 		// 회원_IDX 가져오기
 		int mm_idx = Integer.parseInt(request.getParameter("mm_idx"));
 		
-		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		
 		// 헤더 프로필 경로 설정
 		String profile = "";
+		
+		// 프로필 설정 페이지
+		ArrayList<ProfileDto> showProfile = null;
+		
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
 			profile = dDao.getProfileImg(mm_idx);
+			showProfile = dDao.showProfile(mm_idx);
 		} catch(Exception e) { e.printStackTrace(); }
 		
 		System.out.println(profile);
-		
-		// 프로필 설정 페이지
-		ArrayList<ProfileDto> showProfile = new ArrayList<ProfileDto>();
-		
-		try {
-			showProfile = dDao.showProfile(mm_idx);
-		} catch(Exception e) { e.printStackTrace(); }
 		
 		request.setAttribute("profile_img", profile);
 		request.setAttribute("showProfile", showProfile);

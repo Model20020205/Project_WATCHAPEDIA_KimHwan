@@ -24,15 +24,15 @@ public class WatchaPediaEvaByMemberAction implements Action {
 		// 회원_IDX 가져오기
 		int mm_idx = Integer.parseInt(request.getParameter("mm_idx"));
 		
-		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		
 		// 임의 설정
 		int lastPageNum = 0;
 		
 		// 회원이 작성한 코멘트 전체 출력
-		ArrayList<WriteByMemberCommentDto> showWriteByMember = new ArrayList<WriteByMemberCommentDto>();
+		ArrayList<WriteByMemberCommentDto> showWriteByMember = null;
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
 			showWriteByMember = dDao.showWriteByMember(mm_idx, pageNum);
 			lastPageNum = dDao.getLastScrollNumber(mm_idx);
 		} catch(Exception e) { e.printStackTrace(); }

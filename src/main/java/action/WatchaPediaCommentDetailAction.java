@@ -26,14 +26,14 @@ public class WatchaPediaCommentDetailAction implements Action {
 		int eva_idx = Integer.parseInt(request.getParameter("eva_idx"));
 		
 		// 코멘트(=평가글) 상세 페이지 (프로필 사진, 닉네임, 영화 제목, 개봉 연도, 별점, 평가글 내용, 좋아요 개수, 댓글 개수)
-		ArrayList<CommentDetailDto> showComInfo = new ArrayList<CommentDetailDto>();
+		ArrayList<CommentDetailDto> showComInfo = null;
 
 		// 코멘트(프로필 사진, 닉네임, 댓글 내용, 댓글 작성일자)
-		ArrayList<ReplyDto> showReply = new ArrayList<ReplyDto>();
+		ArrayList<ReplyDto> showReply = null;
 		
 		// Dao객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		try {
+			DetailPageDao dDao = new DetailPageDao();
 			showComInfo = dDao.showComment(eva_idx);
 			showReply = dDao.showReply(eva_idx);
 		} catch(Exception e) {

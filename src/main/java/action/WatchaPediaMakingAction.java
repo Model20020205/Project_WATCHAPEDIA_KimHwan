@@ -29,9 +29,9 @@ public class WatchaPediaMakingAction implements Action {
 		// 출련, 제작 상세 페이지 (개봉 연도, 포스터, 영화 제목, 역할 , 별점)
 		ArrayList<MakingMovieDto> showMovieInfo = null;
 		
-		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
 			showPerson = dDao.showPersonInfo(person_idx);
 			showMovieInfo = dDao.showMovieInfo(person_idx);
 		} catch(Exception e) {

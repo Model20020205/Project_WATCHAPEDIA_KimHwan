@@ -21,13 +21,13 @@ public class WatchaPediaStarEvaAction implements Action {
 		int mm_idx = Integer.parseInt(request.getParameter("mm_idx"));
 		System.out.println("회원_IDX = " + mm_idx);
 		
-		// Dao 객체 생성
-		DetailPageDao dDao = new DetailPageDao();
 		
 		// 영화 회원이 별점 평가한 영화 페이지 (포스터, 영화 제목, 별점)
 		ArrayList<MovieEvaStarDto> showMovieStar = null;
 		
 		try {
+			// Dao 객체 생성
+			DetailPageDao dDao = new DetailPageDao();
 			showMovieStar = dDao.showMovieStar(mm_idx);
 		} catch (Exception e) { e.printStackTrace(); }
 		
