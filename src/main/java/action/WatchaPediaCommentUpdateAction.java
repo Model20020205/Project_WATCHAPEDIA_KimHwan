@@ -29,8 +29,8 @@ public class WatchaPediaCommentUpdateAction implements Action {
 		// 평가글_IDX 가져오기
 		int eva_idx = Integer.parseInt(request.getParameter("eva_idx"));
 		
-		// Dao 객체 생성
 		try {
+			// Dao 객체 생성
 			DetailPageDao dDao = new DetailPageDao();
 			dDao.updateReply(reply_content, reply_idx);
 		} catch(Exception e) {

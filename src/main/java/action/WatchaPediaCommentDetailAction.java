@@ -31,8 +31,8 @@ public class WatchaPediaCommentDetailAction implements Action {
 		// 코멘트(프로필 사진, 닉네임, 댓글 내용, 댓글 작성일자)
 		ArrayList<ReplyDto> showReply = null;
 		
-		// Dao객체 생성
 		try {
+			// Dao객체 생성
 			DetailPageDao dDao = new DetailPageDao();
 			showComInfo = dDao.showComment(eva_idx);
 			showReply = dDao.showReply(eva_idx);

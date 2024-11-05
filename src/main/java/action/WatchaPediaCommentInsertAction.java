@@ -32,8 +32,8 @@ public class WatchaPediaCommentInsertAction implements Action {
 		// 코멘트(=평가글) 상세 페이지 (프로필 사진, 닉네임, 영화 제목, 개봉 연도, 별점, 평가글 내용, 좋아요 개수, 댓글 개수)
 		ArrayList<CommentDetailDto> showComInfo = null;
 		
-		// Dao 객체 생성
 		try {
+			// Dao 객체 생성
 			DetailPageDao dDao = new DetailPageDao();
 			dDao.writeReply(mm_idx, reply_content, eva_idx);
 			showComInfo = dDao.showComment(eva_idx);
